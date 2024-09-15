@@ -1,8 +1,31 @@
 
 #menu-div {
-    position: absolute;
-    display: block;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     width: 100vw;
-    height: fit-content;
-    border: 2px black;
+    height: 44px;
+    background-color: white;
+}
+
+.menu-linked-scroll-adj {
+    scroll-margin-top: 60px;
+}
+
+#menu-div menu {
+    padding-left: 3px;
+    margin-top: 12px;
+    margin-inline: 0;
+    display: flex;
+}
+
+#menu-div li {
+    margin-inline: 10px;
+    display: inline;
+}
+
+#body-div {
+    margin-top: 50px;
 }
