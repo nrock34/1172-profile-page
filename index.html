@@ -4,6 +4,11 @@
     <head>
 
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles-tablet.css">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        </style>
 
     </head>
 
@@ -12,8 +17,8 @@
         <div id="menu-div">
             
             <menu>
-                Menu:
-                <li><a href="#profile-div">Profile</a></li>
+                <span style="margin-right: 15px;">Menu:</span>
+                <!-- <li><a href="#profile-div">Profile</a></li> -->
                 <li><a href="#education-div">Education</a></li>
                 <li><a href="#work-experience-div">Work Experience</a></li>
                 <li><a href="#programming-skill-div">Programming</a></li>
@@ -23,46 +28,49 @@
         </div>
 
         <div id="body-div">
-            <div class="menu-linked-scroll-adj" id="profile-div">
+            <div class="" id="profile-div">
 
-                <h1>
-                    Naeem Hawkins
-                </h1>
-                <p>
-                    Computer Science, 2027
-                </p>
-                <img width=80 height=80 src="https://cdn4.iconfinder.com/data/icons/diversity-v2-0-volume-03/64/superhero-spiderman-comics-512.png">
+                <div class="htext-subtext">
+                    <h1>
+                        Naeem Hawkins
+                    </h1>
+                    <p>
+                        Computer Science, 2027
+                    </p>
+                </div>
+                <img id='pfp' width=80 height=80 src="https://cdn4.iconfinder.com/data/icons/diversity-v2-0-volume-03/64/superhero-spiderman-comics-512.png">
 
             </div>
 
             <div class="menu-linked-scroll-adj" id="education-div">
-
-                <h2>
+                <h2>Education History</h2>
+                <div class="line"></div>
+                <h3>
                     Long Island Lutheran High School
-                </h2>
+                </h3>
                 <p>
                     High School Diploma
                     Graduated 2023, GPA: 3.5
                 </p>
-                <h2>
+                <h3>
                     St. John's University
-                </h2>
+                </h3>
                 <p>
                     Computer Science Degree
                     Expected Graduation in 2027
                 </p>
-
             </div>
 
-            <div class="menu-linked-scroll-adj" id="work-experience-div">
-                <div class="work-experience">
 
-                    <h1>Work Experience</h1>
+            <div class="menu-linked-scroll-adj work-experience" id="work-experience-div">
+
+                    <h2>Work Experience</h2>
+                    <div class="line"></div>
 
                     <ul>
                         <li>
                             Barista, Starbucks
-                            <p style="font-weight: bold;">
+                            <p >
                                 Aug. 2021 - Oct. 2023
                             </p>
                             <p>
@@ -70,8 +78,8 @@
                         </li>
                     
                         <li>
-                            Barista, LifeTime Cafe Bistro 
-                            <p style="font-weight: bold;">
+                            <span>Barista, LifeTime Cafe Bistro </span>
+                            <p>
                                 May. 2024 - Aug. 2024
                             </p>
                             <p>
@@ -79,28 +87,32 @@
                         </li>
                         
                     
-                        <li>Notary Assistant, Dox Notary 
-                            <p style="font-weight: bold;">
+                        <li>
+                            <span>Notary Assistant, Dox Notary</span>
+                            <p>
                             May. 2021 - Current
                             </p>
                             <p>
                             </p>
                         </li>
                     </ul>
-                </div>
             </div>
             <div class="menu-linked-scroll-adj" id="programming-skill-div">
-                <h2 style="font-weight: normal;">
-                    <span style="font-weight: bold;">Programming Languages: </span> Python, Java, HTML, CSS, JavaScript, SQL
-                </h2>
+                    <h2 style="font-weight: normal;">
+                        <span style="font-weight: 500;">Programming Languages: </span> 
+                    </h2>
+                    <p>
+                        Python, Java, HTML, CSS, JavaScript, SQL
+                    </p>
 
             </div>
 
             <div class="menu-linked-scroll-adj" id="general-interest-div">
 
-                <h1>
+                <h2>
                     General Interests
-                </h1>
+                </h2>
+                <div class="line"></div>
                 <ul>
                     <li>
                         Photography
@@ -115,22 +127,23 @@
 
             </div>
 
-            <div id="favorite-song-div"></div>
+            <div class="menu-linked-scroll-adj" id="favorite-song-div">
 
-                <h1>
+                <h2>
                     Favorite Media
-                </h1>
+                </h2>
+                <div class="line"></div>
                 <ul>
                     <li>
-                        <h3>See You Again - <span>Tyler The Creator</span><h3>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TGgcC5xg9YI?si=VwyZbt8zc4M6cex-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h3>See You Again - <span style="font-weight: 300;">Tyler The Creator</span><h3>
+                        <iframe src="https://www.youtube-nocookie.com/embed/TGgcC5xg9YI?si=VwyZbt8zc4M6cex-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <p>
                             <a href="https://youtu.be/TGgcC5xg9YI?si=VwyZbt8zc4M6cex-">Link To YT Vid</a>
                         </p>
                     </li>
                     <li>
                         <h3>Spiderman: Into the Spiderverse<span></span><h3>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/g4Hbz2jLxvQ?si=RJI5w7yb2TFOSHgO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube-nocookie.com/embed/g4Hbz2jLxvQ?si=RJI5w7yb2TFOSHgO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <p>
                             <a href="https://youtu.be/g4Hbz2jLxvQ?si=1AAZOLcPlxWfmf1H">Link To YT Vid</a>
                         </p>
@@ -140,9 +153,10 @@
 
             </div>
 
-            <div id="favorite-website-div">
+            <div class="menu-linked-scroll-adj" id="favorite-website-div">
 
-                <h1>Favorite Websites</h1>
+                <h2>Favorite Websites</h2>
+                <div class="line"></div>
                 <ul>
                     <li>
                         <a href="https://google.com">Google</a>
@@ -171,9 +185,10 @@
             </div>
 
             <div class="menu-linked-scroll-adj" id="project-list-div">
-                <h1>
+                <h2>
                     My Project List
-                </h1>
+                </h2>
+                <div class="line"></div>
                 <p>
                     List of projects that I'm working on
                 </p>
@@ -183,6 +198,13 @@
                     </li>
                 </ul>
             </div>
+        </div>
+
+        <div>
+            <div class="line"></div>
+            <p id="footertxt">
+                Made by Naeem Hawkins - <a id="githublink" href="https://github.com/nrock34">github.com/nrock34</a>
+            </p>
         </div>
 
 

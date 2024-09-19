@@ -1,0 +1,41 @@
+
+@media screen and (max-width: 600px) {
+    #favorite-song-div ul{
+        flex-direction: column;
+    }
+    #favorite-song-div iframe {
+        width: 210px;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 780px) {
+    #favorite-song-div iframe{
+        width: 110px;
+        height: 75px;
+    } 
+    #menu-div {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #menu-div {
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 781px) {
+    #favorite-song-div iframe{
+        width: 140px;
+        height: 75px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    #favorite-song-div iframe{
+        width: 170px;
+        height: 105px;
+    }
+}
+
